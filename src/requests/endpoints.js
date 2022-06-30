@@ -1,6 +1,8 @@
 const API_KEY = 'a2fa542b7a9fa4cc549c952e1df5a462';
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
+const IMG_FULL = "https://image.tmdb.org/t/p/original/";
+
 
 
 const requests = {
@@ -11,7 +13,10 @@ const requests = {
     fetchComedyMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=35`,
     fetchHorrorMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=27`,
     fetchRomanceMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=10749`,
-    fetchDocumantaries: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=99`
+    fetchDocumantaries: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=99`,
+    fetchDiscover: `${BASE_URL}/discover/movie?api_key=${API_KEY}`,
+    fetchMovieForID: `${BASE_URL}/movie/`
   }
 
-export {requests,IMG_URL};
+
+export {requests,IMG_URL,IMG_FULL,API_KEY};
