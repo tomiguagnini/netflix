@@ -1,4 +1,4 @@
-const API_KEY = 'a2fa542b7a9fa4cc549c952e1df5a462';
+const API_KEY = process.env.REACT_APP_API_KEY || '';
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 const IMG_FULL = "https://image.tmdb.org/t/p/original/";

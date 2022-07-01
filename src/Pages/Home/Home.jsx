@@ -21,6 +21,7 @@ const Home = () => {
           <Row title="Actions Movies" url={requests.fetchActionMovies} />
           <Row title="Comedy Movies" url={requests.fetchComedyMovies} />
           <Row title="Horror Movies" url={requests.fetchHorrorMovies} />
+          <Row title="Discover" url={requests.fetchDiscover} />
           <Row title="Romance Movies" url={requests.fetchRomanceMovies} />
           <Row title="Documentaries" url={requests.fetchDocumantaries} />
           

@@ -17,7 +17,7 @@ const Row = ({ title, url, isLargeRow }) => {
     } catch (error) {
       console.error(error);
     }
-  }, []);
+  }, [url]);
 
   return (
     <>
