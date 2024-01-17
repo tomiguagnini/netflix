@@ -7,8 +7,8 @@ const keyParams = `?api_key=${API_KEY}`
 function getMovies(url) {
     return axios
       .get(url)
-      .then((response) => response.data.results);
-      //.catch((error) => console.error(error));
+      .then((response) => response.data.results)
+      .catch((error) => console.error(error))
 }
 function getMovie(url){
   return axios

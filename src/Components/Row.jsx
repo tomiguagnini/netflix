@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import "./Row.css";
 import { getMovies } from "../services/fetchMovies.js";
 import { IMG_URL } from "../requests/endpoints";
-import { Link } from "react-router-dom";
 
 const Row = ({ title, url, isLargeRow }) => {
   const [movies, setmovies] = useState([]);
@@ -26,7 +25,6 @@ const Row = ({ title, url, isLargeRow }) => {
         <h3 className={`title ${isLargeRow && "title_isLargeRow"}`}>{title}</h3>
         <div className="slider">
           {movies.map((movie) => (
-            <Link to={`/movie/${movie.id}`}>
               <img
                 key={movie.id}
                 className={`slider_item ${
@@ -39,7 +37,6 @@ const Row = ({ title, url, isLargeRow }) => {
                 }
                 alt={movie.name}
               />
-            </Link>
           ))}
         </div>
       
